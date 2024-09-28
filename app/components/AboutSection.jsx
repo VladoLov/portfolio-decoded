@@ -66,12 +66,15 @@ const AboutSection = () => {
         <video
           width={500}
           height={350}
-          controls
+          controls={false}
+          controlsList="nodownload nofullscreen noremoteplayback"
           preload="yes"
           autoPlay
           loop
           muted
           playsInline
+          disablePictureInPicture
+          disableRemotePlayback
         >
           <source src="/nits_small.mp4" type="video/mp4" />
         </video>
