@@ -43,10 +43,9 @@ const TAB_DATA = [
         <li>Data Analyst, Excel, Python Power Bi, by Simon Sez IT</li>
         <li>Web Development Bootcamp by Angela Yu</li>
         <li>The Ultimate React Course by Jonas Schmedtmann</li>
-        <li>NextJS and Open AI by John Smilga</li>
         <li>Advanced CSS and Sass by Jonas Schmedtmann</li>
         <li>HTML and CSS by Jonas Schmedtmann</li>
-        <li>ORM: Prisma and Drizzle</li>
+        <li>NextJS and Open AI by John Smilga</li>
         <li>React and TypeScript by John Smilga</li>
         <li>NextJS and Strapi by Niclas Fischer</li>
       </ul>
@@ -62,9 +61,21 @@ const AboutSection = () => {
     startTransition(() => setTab(id));
   };
   return (
-    <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/computer.jpeg" width={500} height={500} alt="computer" />
+    <section className="text-white" id="about">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center pt-24 px-4 xl:gap-16 sm:pt-32 sm:pb-8 xl:px-16">
+        <video
+          width={500}
+          height={350}
+          controls
+          preload="yes"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/nits_small.mp4" type="video/mp4" />
+        </video>
+
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h className="text-4xl font-bold text-white mb-4">About Me</h>
           <p className="tet-base md:text-lg">

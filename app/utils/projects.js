@@ -1,0 +1,38 @@
+export const webPages = [
+  {
+    id: 1,
+    title: "Jobify",
+    description: "Project with CRUD operations",
+    image: "/jobify.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://jobify-nine-alpha.vercel.app/jobs",
+    previewUrl: "https://jobify-nine-alpha.vercel.app/jobs",
+  },
+  {
+    id: 2,
+    title: "Lanterna",
+    description: "Simple web page with animations",
+    image: "/Lanterna.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://jobify-nine-alpha.vercel.app/jobs",
+    previewUrl: "https://jobify-nine-alpha.vercel.app/jobs",
+  },
+  {
+    id: 3,
+    title: "The Wild Oasis",
+    description: "Booking app",
+    image: "/theWildOasis.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://jobify-nine-alpha.vercel.app/jobs",
+    previewUrl: "https://jobify-nine-alpha.vercel.app/jobs",
+  },
+  {
+    id: 4,
+    title: "Xora",
+    description: "My best portfolio design project",
+    image: "/xora.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://jobify-nine-alpha.vercel.app/jobs",
+    previewUrl: "https://jobify-nine-alpha.vercel.app/jobs",
+  },
+];

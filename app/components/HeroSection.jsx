@@ -2,16 +2,23 @@
 import Image from "next/image";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className="lg:py-16">
       <div className="grid grid-cols-1 md:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center md:text-left">
-          <h1 className="text-white mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold">
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="col-span-8 place-self-center text-center md:text-left"
+        >
+          <h1 className="text-white mb-4 text-4xl md:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-blue-700 to-teal-400">
               Portfolio{" "}
             </span>{" "}
+            <br />
             <TypeAnimation
               sequence={["Website", 2000, "Vladislav Lovric", 2000]}
               wrapper="span"
@@ -32,8 +39,8 @@ const HeroSection = () => {
               Download CV
             </button>
           </div>
-        </div>
-        <div className="col-span-5 place-self-center mt-10 lg:mt-0 ">
+        </motion.div>
+        <div className="col-span-4 place-self-center mt-10 lg:mt-0 ">
           <div className="rounded-full bg-[#181818] w-[220px] h-[120px] lg:w-[440px] lg:h-[320px] relative">
             <Image
               src="/imageofme.jpg"
